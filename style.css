@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+/* ================= CUERPO ================= */
+body {
+    background-color: #f8f1ec;
+    color: #3e2723;
+    line-height: 1.6;
+}
+
+/* ================= ANIMACIÓN SUAVE GENERAL ================= */
+@keyframes entradaSuave {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================= HEADER ================= */
+header {
+    background-color: #4e342e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+    animation: entradaSuave 0.9s ease;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ================= SECCIONES ================= */
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+
+    animation: entradaSuave 0.9s ease;
+}
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ================= INICIO ================= */
+.inicio {
+    text-align: center;
+}
+
+.logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.inicio button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #6d4c41;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.inicio button:hover {
+    background-color: #5d4037;
+    transform: scale(1.05);
+}
+
+/* ================= TIENDA ================= */
+.tienda {
+    text-align: center;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.producto {
+    background-color: #fff3e0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.precio {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.producto button {
+    background-color: #5d4037;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.producto button:hover {
+    transform: scale(1.05);
+}
+
+/* ================= ACERCA DE ================= */
+.acerca {
+    background-color: #fff3e0;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.acerca h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.acerca h3 {
+    margin-top: 25px;
+    color: #4e342e;
+}
+
+.acerca p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.acerca ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.acerca li {
+    margin-bottom: 5px;
+}
+/* ================= CONTACTANOS ================= */
+.contacto {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  text-align: center;
+  background-color: #f7f3ef;
+  border-radius: 15px;
+}
+
+.contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.info-centro {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+  color: #000;
+  text-decoration: none;
+}
+
+.maps-link:hover {
+  text-decoration: underline;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+/* ================= CONTACTO ================= */
+.contacto {
+    background-color: #d7ccc8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #4e342e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+
+    animation: entradaSuave 0.9s ease;
+}
